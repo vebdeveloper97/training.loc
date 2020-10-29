@@ -25,12 +25,12 @@
             echo \hail812\adminlte3\widgets\Menu::widget([
                 'items' => [
                     [
-                        'label' => 'Starter Pages',
-                        'icon' => 'tachometer-alt',
+                        'label' => Yii::t('app', 'HR'),
+                        'icon' => 'users',
                         'badge' => '<span class="right badge badge-info">2</span>',
                         'items' => [
-                            ['label' => 'Active Page', 'url' => ['site/index'], 'iconStyle' => 'far'],
-                            ['label' => 'Inactive Page', 'iconStyle' => 'far'],
+                            ['label' => Yii::t('app', 'Xodim qo\'shish'), 'url' => ['/hr/hr-employee/create']],
+                            ['label' => Yii::t('app', 'Xodimlar'), 'url' => ['/hr/hr-employee/index']],
                         ]
                     ],
                     ['label' => 'Login', 'url' => ['site/login'], 'icon' => 'sign-in-alt', 'visible' => Yii::$app->user->isGuest],
